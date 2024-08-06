@@ -1,10 +1,11 @@
+import Card from "../../components/common/Card";
 import Banner from "../../components/layout/Banner";
-import { Link } from "react-router-dom";
 
 const Inicio = ()=> {
     return(
         <>
             <Banner imagem="home" />
+            <Card />
         </>
     )
 }
