@@ -11,7 +11,6 @@ const EstiloGlobal = createGlobalStyle`
      text-decoration: none;
      list-style: none;
      box-sizing: border-box;
-     color: #ffffff;
      font-size: 16px;
    } 
 

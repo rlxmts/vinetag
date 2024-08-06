@@ -1,20 +1,33 @@
 import styled from "styled-components";
+import Titulo from "../Titulo";
+import { IoHeartOutline } from "react-icons/io5";
 
 const DivCard = styled.div`
     width: 240px;
     background-color: #FFFFFF;
-
+    cursor: pointer;
     img{
         width:100%;
     }
 `
+const DivInfo = styled.div`
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .icone{
+        cursor: pointer;
+    }
+`
 
-const Card = () => {
+const Card = ({imagem, titulo, alt}) => {
     return(
         <DivCard>
-            <img src="https://caelum-online-public.s3.amazonaws.com/2802-react-praticando/img1.png" alt="" />
-            <h2>Titulo do video</h2>
-            <img src="" alt="" />
+            <img src={imagem} alt={alt} />
+            <DivInfo>
+                <Titulo><h2>{titulo}</h2></Titulo>
+                <IoHeartOutline className="icone" />
+            </DivInfo>
         </DivCard>
     )
 }
