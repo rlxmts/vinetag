@@ -2,15 +2,7 @@ import Card from "../../common/Card";
 import videos from "../../../json/db.json";
 import styled from "styled-components";
 import Container from "../../common/Container";
-
-const Section = styled.section`
-    h1{
-        font-size: 2rem;
-        color: #FFFFFF;
-        margin-bottom: 1rem;
-        text-align: center;
-    }
-`
+import { Titulo } from "../../common/Titulo";
 
 const ListaDeVideos = styled.div`
     display: flex;
@@ -21,9 +13,9 @@ const ListaDeVideos = styled.div`
 
 const Videos = () => {
     return(
-        <Section>
+        <section>
             <Container>
-                <h1>Lista de Videos</h1>
+                <Titulo>Lista de Videos</Titulo>
                 <ListaDeVideos>
                     {videos.map( video => {
                         return(
@@ -32,7 +24,7 @@ const Videos = () => {
                     })}
                 </ListaDeVideos>
             </Container>
-        </Section>
+        </section>
     )
 }
 

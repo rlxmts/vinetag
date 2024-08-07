@@ -1,16 +1,8 @@
 import styled from "styled-components"
 
-const Div = styled.div`
-    color: #000000;
-    font-weight: 600;
+export const Titulo = styled.h2`
+    color: #FFFFFF;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
 `
-
-const Titulo = ({children})=> {
-    return(
-        <Div>
-            {children}
-        </Div>
-    )
-}
-
-export default Titulo;

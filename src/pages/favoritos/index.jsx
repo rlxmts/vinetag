@@ -1,10 +1,16 @@
+import Container from "../../components/common/Container";
+import { Titulo } from "../../components/common/Titulo";
 import Banner from "../../components/layout/Banner";
-import { Link } from "react-router-dom";
 
 const Favoritos = () => {
     return(
         <>
-        <Banner imagem='favoritos' />
+            <Banner imagem='favoritos' />
+            <Container>
+                <Titulo>
+                    Meus Favoritos
+                </Titulo>
+            </Container>
         </>
     )
 }

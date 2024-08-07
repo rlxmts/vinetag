@@ -17,6 +17,9 @@ const Header = styled.header`
 const Nav = styled.nav`
     display: flex;
     gap: 1rem;
+    a{
+        color: #FFFFFF;
+    }
 `
 
 const Cabecalho = () => {
